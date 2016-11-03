@@ -1,6 +1,132 @@
 <div class="panel-heading">
-  <h3 class="panel-title"><%= controller_name.upcase %> Menu</h3>
+  <h3 class="panel-title"><%= controller_name.upcase %> Outline</h3>
 </div>
 <div class="panel-body">
-  List each page in this directory (exclude partials)
+
+  <div class="panel panel-default">
+
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseA">
+        A. Introduction and Purpose
+      </h4>
+    </div>
+    <div id="collapseA"
+      class="panel-collapse collapse">
+      <div class="panel-body">some toggled text</div>
+    </div>
+
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseB">
+        B. Workflow Instructions
+      </h4>
+    </div>
+    <div id="collapseB"
+      class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+          <li>Write the NUMBERED tasks in this outline on post-its (it's best if the students can write their own tasks based on the project requirements)</li>
+          <li>Put the post-its in the TO-DO column</li>
+          <li>As you do start each task - put it in the DOING column</li>
+          <li>If you get stuck put your post-it on the PROBLEM-SOLVING column and follow the escalation process</li>
+          <li>When the task is done -- both functionally and academically -- put the post-it in the READY column</li>
+          <li>When the teacher has been able to assess your READINESS the task can go in the DONE or DOING column -- depending on the results of the teacher's review</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseC">
+        C. Problem Solving / Getting Help
+      </h4>
+    </div>
+    <div id="collapseC"
+      class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+          <li>Compare your work to teaching materials</li>
+          <li>Compare your work to Google results</li>
+          <li>Ask partner to review your work and help</li>
+          <li>Ask another team if they understand a topic and if so have them review your work and help</li>
+          <li>Ask explain to the teacher what you understand, what you have tried and what you have found and ask for additional guidance</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseD">
+        D. Hardware
+      </h4>
+    </div>
+    <div id="collapseD"
+      class="panel-collapse collapse">
+      <div class="panel-body">
+        <b>ALWAYS UNPLUG THE ARDUINO WHEN WIRING -- for both your and the Arduino's safety</b>
+        <ol>
+          <li>Using the circuit diagram add the thermometer</li>
+          <li>Test the Arduino can read the thermometer (and changes) by the Arduino by using the <b>test_themometer</b> (link to github) software</li>
+            <ul>
+              <li><i>(if the fan is attached it is ok if it running)</i></li>
+              <li>Open the serial communication interface and be sure the temperature changes as you hold the thermometer</li>
+              <li>Move the thermometer to a new pin and verify that you no longer get meaningful temperature readings</li>
+              <li>Put the thermometer back into the proper pin and verify you get meaningful temperature readings again</li>
+            </ul>
+          <li>Using the circuit diagram add the fan using -- controlled via the relay</li>
+          <li>Test the failsafe setup of the relay and be sure the fan runs even when detached from the arduino</li>
+          <li>Test the fan can be controled by the arduino -- upload the <b>test_fan_control</b> (link to github) software</li></li>
+            <ul>
+              <li>the fan should run for 10 seconds and be off for 5 seconds</li>
+              <li>Open the serial communication interface and be sure the "FAN ON" and "FAN OFF" messages are in sync with the fan's activity</li>
+              <li>Move the relay controlling the fan to a new pin and verify that fan runs continiously</li>
+              <li>Put the relay controlling the fan back into the proper pin and verify the fan works as expected</li>
+            </ul>
+          <li>Change the fan timing to be <b>ON</b> for 6 seconds and <b>OFF</b> for 3 seconds</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseE">
+        E. Software
+      </h4>
+    </div>
+    <div id="collapseE"
+      class="panel-collapse collapse">
+      <div class="panel-body">
+        <ol>
+          <li>Configure your software environment</li>
+            <ul>
+              <li>Download the Arduino software from <a href="https://www.arduino.cc/en/Main/Software">Arduino.cc</a></li>
+              <li>Plug the Arduino into your computer</li>
+              <li>Start and configure the software - be sure it can see the arduino</li>
+            </ul>
+          <li>Upload test_blink software (link to github) to the arduino and be sure the Arduino's built-in LED blinks</li>
+            <ul>
+              <li><i><b>ALWAYS DELETE ALL CODE IN THE ARDUINO SOFTWARE -- including {} -- BEFORE COPYING IN THE NEW CODE</b></i></li>
+            </ul>
+          <li>Using the provided rules for Arduino code -- write software that switches the fan on when the temperature is more than 27.0 *C (or copy the software temperature_controlled_fan - link to github)</li>
+          <li>Upload your code and verify the fan turns on at and above 27.9 *C</li>
+          <li>Change the fan trigger temperature to 26.5 *C and verify it works as expected</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseF">
+        F. In Your Own Classrooom
+      </h4>
+    </div>
+    <div id="collapseF"
+      class="panel-collapse collapse">
+      <div class="panel-body">
+        <ol>
+          <li>Find our parts list (and aquire the parts)</li>
+          <li>Find our lesson plans <a href="/gardener">Robot Gardener</li>
+          <li>Be sure you know our contact and hopefully others in this class to collaborate and help
+        </ol>
+      </div>
+    </div>
+
+  </div>
+
+
 </div>
