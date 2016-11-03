@@ -12,60 +12,70 @@
     </div>
     <div id="collapseA"
       class="panel-collapse collapse">
-      <div class="panel-body">some toggled text</div>
+      <div class="panel-body">
+        <a href="/workshop">Workshop Introduction</a>
+      </div>
     </div>
 
     <div class="panel-heading">
       <h4 class="panel-title" data-toggle="collapse" data-target="#collapseB">
-        B. Workflow Instructions
+        B. Instructions and Workflow
       </h4>
     </div>
     <div id="collapseB"
       class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
-          <li>Write the NUMBERED tasks in this outline on post-its (it's best if the students can write their own tasks based on the project requirements)</li>
-          <li>Put the post-its in the <b>TO-DO</b> column</li>
-          <li>As you do start each task - put it in the <b>DOING</b> column</li>
-          <li>If you get stuck put your post-it on the <b>PROBLEM SOLVING PATH</b> and follow the escalation process</li>
-          <li>When the task is done -- both functionally and academically -- put the post-it in the <b>READY</b> column</li>
-          <li>When the <b>teacher</b> has been able to assess your READINESS the task can go in the <b>DONE</b> or back to the <b>DOING</b> column -- depending on the results of the teacher's review</li>
+          <li><a href="/workshop/workflow">CLASS WORKFLOW</a></li>
+            <ul>
+              <li>Pre-Test</li>
+              <li>Problem Solving</li>
+              <li>Task Review</li>
+              <li>Work / Learn</li>
+              <li>Post-Test</li>
+              <li>Feedback Please!</li>
+            </ul>
+          <li><a href="/workshop/workflow">USING THE KANBAN</a></li>
+          <li><a href="/workshop/workflow">PROBLEM SOLVING PATH</a></li>
         </ul>
       </div>
     </div>
 
     <div class="panel-heading">
       <h4 class="panel-title" data-toggle="collapse" data-target="#collapseC">
-        C. Problem Solving / Getting Help Path
+        C. Tasks
       </h4>
     </div>
     <div id="collapseC"
       class="panel-collapse collapse">
       <div class="panel-body">
-        <b>Focus on exploring and growth</b>
-        <br>
-        <i>When experiencing difficulties:
-        <br>
-        <b class="text-success">* REMEMBER "not yet"</b></i>
-        <br>
-        <i class="text-warning">* AVOID - "I can't"</i>
-        <ul>
-          <li>Move your Post-it to the <b>Problem Solving Path</b></li>
-          <li>Compare your work to teaching materials</li>
-          <li>Compare your work to Google results</li>
-          <li>Ask partner to review your work and help</li>
-          <li>Ask another team if they understand a topic and if so have them review your work and help</li>
-          <li>Ask explain to the teacher what you understand, what you have tried and what you have found and ask for additional guidance</li>
-        </ul>
+        <a href="/workshop/tasks">Task List</a>
+        <ol>
+          <li>List what plants need to grow</li>
+        </ol>
       </div>
     </div>
 
     <div class="panel-heading">
       <h4 class="panel-title" data-toggle="collapse" data-target="#collapseD">
-        D. Software
+        D. Plant Biology
       </h4>
     </div>
     <div id="collapseD"
+      class="panel-collapse collapse">
+      <div class="panel-body">
+        <ol>
+          <li>List what plants need to grow</li>
+        </ol>
+      </div>
+    </div>
+
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseE">
+        E. Software
+      </h4>
+    </div>
+    <div id="collapseE"
       class="panel-collapse collapse">
       <div class="panel-body">
         <p class="text-danger"><b>ALWAYS DELETE ALL CODE IN THE ARDUINO SOFTWARE -- including {} -- BEFORE COPYING IN NEW CODE</b></p>
@@ -81,7 +91,7 @@
             <ul>
               <li>verify the LED on for 2 seconds and off 1 second</li>
               <li>verify using the serial communication you can see the print out of when the Arduino thinks the LED is ON and OFF</li>
-              <li>
+              <li>ADVANCED OPTION: change the speed to the serial communication in your software, upload your updated software and observe the Arduino print statements</li>
             </ul>
           <li><b>ADJUST:</b> change the LED on time to 4 seconds ON and 2 seconds OFF</li>
           <li><b>VERIFY KNOWLEDGE:</b></li>
@@ -103,11 +113,11 @@
     </div>
 
     <div class="panel-heading">
-      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseE">
-        E. Hardware
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseF">
+        F. Hardware
       </h4>
     </div>
-    <div id="collapseE"
+    <div id="collapseF"
       class="panel-collapse collapse">
       <div class="panel-body">
         <p class="text-danger"><b>ALWAYS UNPLUG THE ARDUINO WHEN WIRING -- for both your and the Arduino's safety</b></p>
@@ -174,13 +184,14 @@
     </div>
 
     <div class="panel-heading">
-      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseF">
-        F. Integrate Everything
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseG">
+        G. Integration
       </h4>
     </div>
-    <div id="collapseF"
+    <div id="collapseG"
       class="panel-collapse collapse">
       <div class="panel-body">
+        Ideally in this phase your robot would actually keep a plant alive
         <ol>
           <li><b>UPLOAD:</b> <b>temperature_controlled_fan</b> software (link to github) and verify the fan turns on at and above 27.0 *C</li>
           <li><b>ADJUST:</b> the fan trigger temperature to 26.5 *C and verify it works as expected</li>
@@ -199,19 +210,39 @@
     </div>
 
     <div class="panel-heading">
-      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseG">
-        G. In Your Own Classrooom
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseH">
+        H. Engineering and Design
       </h4>
     </div>
-    <div id="collapseG"
+    <div id="collapseH"
       class="panel-collapse collapse">
       <div class="panel-body">
+        <i>This would normally be done at the beginning and through out the creation process (however we don't have time today)</i>
+        <br>
+        Assume you need to control ligting for two different plants (a woodland low light plant and a light loving vegtable)
         <ol>
-          <li>Find our parts list (and aquire the parts)</li>
-          <li>Find our lesson plans <a href="/gardener">Robot Gardener</li>
-          <li>Be sure your computer is setup to work with the Arduino<li>
-          <li>Be sure you know our contact and hopefully others in this class to collaborate and help<li>
+          <li>test the various light sensors provided</li>
+          <li>determine which light sensor would be best for the woodland plant</li>
+          <li>determine which light sensor would be best for the light loving vegtable plant</li>
+          <li>pick a plant type and attach the light fixture to the greenhouse in order to provide the lighting the plant requires</li>
         </ol>
+      </div>
+    </div>
+
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseI">
+        I. In Your Own Classrooom
+      </h4>
+    </div>
+    <div id="collapseI"
+      class="panel-collapse collapse">
+      <div class="panel-body">
+        <ul>
+          <li>Find our parts list (and aquire the parts)</li>
+          <li>Find our lesson plans <a href="/gardener">Robot Gardener</a></li>
+          <li>Be sure your computer is setup to work with the Arduino</li>
+          <li>Be sure you know our contact and hopefully others in this class to collaborate and help</li>
+        </ul>
       </div>
     </div>
 
