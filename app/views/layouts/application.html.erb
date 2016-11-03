@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Edgility</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <!-- NAVIGATION BAR -->
+  <%= render "layouts/navbar" %>
+  <!-- NAVIGATION BAR -->
+
+  <!-- MAIN CONTAINER -->
+  <div class="container">
+
+    <!-- TOP IMAGE -->
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="text-success"><%= controller_name.upcase %></h2>
+        <%= render partial: "top_image" %>
+        <br>
+      </div>
+    </div>
+    <!-- TOP IMAGE -->
+
+    <!-- TEXT CONTENT -->
+    <div class="row">
+
+      <!-- Main Content -->
+      <div class="col-sm-8">
+        <%= yield %>
+      </div>
+      <!-- Main Content -->
+
+      <!-- SIDE BAR -->
+      <div class="col-sm-4">
+        <%= render "layouts/sidebar" %>
+      </div>
+      <!-- SIDE BAR -->
+
+    </div>
+    <!-- TEXT CONTENT -->
+
+  </div>
+  <!-- MAIN CONTAINTER -->
+
+  <!-- FOOTER -->
+  <%= render "layouts/footer" %>
+  <!-- FOOTER -->
+
+</body>
+</html>
