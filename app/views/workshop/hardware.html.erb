@@ -1,0 +1,74 @@
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= @title %></h3>
+  </div>
+  <div class="panel-body">
+
+    <p class="text-danger"><b>ALWAYS UNPLUG THE ARDUINO WHEN WIRING -- for both your and the Arduino's safety</b></p>
+    <br>
+    <b>THEROMETER - ANALOG</b>
+    <ol>
+      <li><b>WIRING:</b> Using the circuit diagram add the thermometer</li>
+      <li><b>TEST:</b> the Arduino can read the thermometer (and changes) by the Arduino by using the <b>test_themometer</b> (link to github) software</li>
+        <ul>
+          <li><i>(if the fan is attached it is ok if it running)</i></li>
+          <li>Open the serial communication interface and be sure the temperature changes as you hold the thermometer</li>
+        </ul>
+      <li><b>FAIL TEST:</b> - Move the thermometer to <b>pin A3</b> and verify that you no longer get meaningful temperature readings</li>
+      <li><b>ADJUST:</b> test your coding skills
+        <ul>
+          <li>adjust the code so the Arduino can read the thermometer again</li>
+        </ul>
+      <li><b>VERIFY ANALOG HARDWARE/SOFTWARE KNOWLEDGE:</b></li>
+        <ul>
+          <li>what is voltage?</li>
+          <li>what is a variable?</li>
+          <li>what is a float variable?</li>
+          <li>what is an integer variable?</li>
+          <li>what does pin input mode mean?</li>
+          <li>what do the analog pins measure?</li>
+          <li>why is 1 / 2 equal to 0 in arduino code?</li>
+          <li>why is 1.0 / 2.0 equal to 0.5 in arduino code?</li>
+          <li>what does a analog mean (how is that different than digital)?</li>
+          <li>what device (chip set) does Arduino make analog measurements useful to an Arduino -- why is this necessary?</li>
+        </ul>
+    </ol>
+    <b>FAN (and relay) - DIGITAL and HIGH POWER</b>
+    <ol>
+      <li><b>WIRING:</b> Using the circuit diagram add the fan using -- controlled via the relay</li>
+      <li><b>TEST:</b>  the fan can be controled by the arduino -- upload the <b>test_fan_control</b> (link to github) software</li>
+        <ul>
+          <li>the fan should run for 10 seconds and be off for 5 seconds</li>
+          <li>Open the serial communication interface and be sure the "FAN ON" and "FAN OFF" messages are in sync with the fan's activity</li>
+        </ul>
+      <li><b>FAILSAFE TEST:</b> be sure the fan runs continiously in failure conditions:
+        <ul>
+          <li>even when detached from the arduino</li>
+          <li>Move the relay controlling the fan to <b>pin 9</b></li>
+        </ul>
+      <li><b>ADJUST:</b> test your coding skills</li>
+        <ul>
+          <li>Adjust your code so the Arduino can control the fan using <b>pin 9</b></li>
+          <li>Change the fan timing to be <b>ON</b> for 6 seconds and <b>OFF</b> for 3 seconds</li>
+        </ul>
+      <li><b>VERIFY DIGITAL HARDWARE/SOFTWARE KNOWLEDGE:</b></li>
+        <ul>
+          <li>what is current?</li>
+          <li>what can a digital pin output?</li>
+          <li>what does pin output mode mean?</li>
+          <li>How much current can this fan handle?</li>
+          <li>How much voltage can this fan handle?</li>
+          <li>How much current can this relay deliver?</li>
+          <li>How much voltage can this relay deliver?</li>
+          <li>How much current can the Arduino deliver?</li>
+          <li>How much voltage can the Arduino deliver?</li>
+          <li>explain why a relay is helpful in this case?</li>
+        </ul>
+    </ol>
+    <br>
+    <b id="circuit">Circuit Diagram</b>
+    <br>
+    <img src="http://dummyimage.com/800x1200/eee/fff&amp;text=circuit_diagram" class="img-responsive">
+
+  </div>
+</div>

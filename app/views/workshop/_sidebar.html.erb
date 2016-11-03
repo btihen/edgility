@@ -14,6 +14,13 @@
       class="panel-collapse collapse">
       <div class="panel-body">
         <a href="/workshop">Workshop Introduction</a>
+        <br>
+        <br>
+        <ul>
+          <li>Educational Lesson Goals</li>
+          <li>What YOU will learn (hopefully)</li>
+        </ul>
+
       </div>
     </div>
 
@@ -25,45 +32,49 @@
     <div id="collapseB"
       class="panel-collapse collapse">
       <div class="panel-body">
+        <a href="/workshop/instructions">Instruction Details</a>
+        <br>
+        <br>
         <ul>
-          <li><a href="/workshop/workflow">CLASS WORKFLOW</a></li>
+          <li>USING KANBAN</a></li>
+          <li>PROBLEM SOLVING PATH</a></li>
+          <li>CLASS WORKFLOW</a></li>
             <ul>
               <li>Pre-Test</li>
-              <li>Problem Solving</li>
-              <li>Task Review</li>
-              <li>Work / Learn</li>
+              <li>Task Review / Planning</li>
+              <li>Pull Tasks and Learn</li>
               <li>Post-Test</li>
               <li>Feedback Please!</li>
             </ul>
-          <li><a href="/workshop/workflow">USING THE KANBAN</a></li>
-          <li><a href="/workshop/workflow">PROBLEM SOLVING PATH</a></li>
         </ul>
       </div>
     </div>
 
     <div class="panel-heading">
       <h4 class="panel-title" data-toggle="collapse" data-target="#collapseC">
-        C. Tasks
+        C. Pre-Test
       </h4>
     </div>
     <div id="collapseC"
       class="panel-collapse collapse">
       <div class="panel-body">
-        <a href="/workshop/tasks">Task List</a>
         <ol>
-          <li>List what plants need to grow</li>
+          <li>Take the Pre-test (link)</li>
         </ol>
       </div>
     </div>
 
     <div class="panel-heading">
       <h4 class="panel-title" data-toggle="collapse" data-target="#collapseD">
-        D. Plant Biology
+        D. To-Do List
       </h4>
     </div>
     <div id="collapseD"
       class="panel-collapse collapse">
       <div class="panel-body">
+        <a href="/workshop/tasks">Task List</a>
+        <br>
+        <br>
         <ol>
           <li>List what plants need to grow</li>
         </ol>
@@ -72,130 +83,84 @@
 
     <div class="panel-heading">
       <h4 class="panel-title" data-toggle="collapse" data-target="#collapseE">
-        E. Software
+        E. Plant Biology
       </h4>
     </div>
     <div id="collapseE"
       class="panel-collapse collapse">
       <div class="panel-body">
-        <p class="text-danger"><b>ALWAYS DELETE ALL CODE IN THE ARDUINO SOFTWARE -- including {} -- BEFORE COPYING IN NEW CODE</b></p>
-        <br>
         <ol>
-          <li><b>CONFIGURE:</b> your software environment</li>
-            <ul>
-              <li>Download the Arduino software from <a href="https://www.arduino.cc/en/Main/Software">Arduino.cc</a></li>
-              <li>Plug the Arduino into your computer</li>
-              <li>Start and configure the software - be sure it can see the arduino</li>
-            </ul>
-          <li><b>TEST:</b> <b>test_blink</b> software (link to github) to the arduino and be sure the Arduino's built-in LED blinks</li>
-            <ul>
-              <li>verify the LED on for 2 seconds and off 1 second</li>
-              <li>verify using the serial communication you can see the print out of when the Arduino thinks the LED is ON and OFF</li>
-              <li>ADVANCED OPTION: change the speed to the serial communication in your software, upload your updated software and observe the Arduino print statements</li>
-            </ul>
-          <li><b>ADJUST:</b> change the LED on time to 4 seconds ON and 2 seconds OFF</li>
-          <li><b>VERIFY KNOWLEDGE:</b></li>
-            <ul>
-              <li>what does the symbol "=" do?</li>
-              <li>what code reads a pin?</li>
-              <li>what code outputs to a pin?</li>
-              <li>what does setup() do?</li>
-              <li>what does loop() do?</li>
-              <li>why is it useful to assign pin numbers to variable?</li>
-              <li>what is serial communication?</li>
-              <li>what does print do?</li>
-              <li>what does println do?</li>
-              <li>how can you view Arduino print statements?</li>
-              <li>how can print statements help you understand and debug Arduino code?</li>
-            </ul>
+          <li>List what plants need to grow</li>
         </ol>
       </div>
     </div>
 
     <div class="panel-heading">
       <h4 class="panel-title" data-toggle="collapse" data-target="#collapseF">
-        F. Hardware
+        F. Software
       </h4>
     </div>
     <div id="collapseF"
       class="panel-collapse collapse">
       <div class="panel-body">
-        <p class="text-danger"><b>ALWAYS UNPLUG THE ARDUINO WHEN WIRING -- for both your and the Arduino's safety</b></p>
-        <b>THEROMETER</b>
+        <a href="/workshop/software">Software</a>
+        <br>
+        <br>
         <ol>
-          <li><b>WIRING:</b> Using the circuit diagram add the thermometer</li>
-          <li><b>TEST:</b> the Arduino can read the thermometer (and changes) by the Arduino by using the <b>test_themometer</b> (link to github) software</li>
-            <ul>
-              <li><i>(if the fan is attached it is ok if it running)</i></li>
-              <li>Open the serial communication interface and be sure the temperature changes as you hold the thermometer</li>
-            </ul>
-          <li><b>FAIL TEST:</b> - Move the thermometer to <b>pin A3</b> and verify that you no longer get meaningful temperature readings</li>
-          <li><b>ADJUST:</b> test your coding skills
-            <ul>
-              <li>adjust the code so the Arduino can read the thermometer again</li>
-            </ul>
-          <li><b>VERIFY KNOWLEDGE:</b></li>
-            <ul>
-              <li>what is voltage?</li>
-              <li>what is a variable?</li>
-              <li>what is a float variable?</li>
-              <li>what is an integer variable?</li>
-              <li>what does pin input mode mean?</li>
-              <li>what do the analog pins measure?</li>
-              <li>why is 1 / 2 equal to 0 in arduino code?</li>
-              <li>why is 1.0 / 2.0 equal to 0.5 in arduino code?</li>
-              <li>what does a analog mean (how is that different than digital)?</li>
-              <li>what device (chip set) does Arduino make analog measurements useful to an Arduino -- why is this necessary?</li>
-            </ul>
-        </ol>
-        <b>FAN (and relay) - advanced</b>
-        <ol>
-          <li><b>WIRING:</b> Using the circuit diagram add the fan using -- controlled via the relay</li>
-          <li><b>TEST:</b>  the fan can be controled by the arduino -- upload the <b>test_fan_control</b> (link to github) software</li></li>
-            <ul>
-              <li>the fan should run for 10 seconds and be off for 5 seconds</li>
-              <li>Open the serial communication interface and be sure the "FAN ON" and "FAN OFF" messages are in sync with the fan's activity</li>
-            </ul>
-          <li><b>FAILSAFE TEST:</b> be sure the fan runs continiously in failure conditions:
-            <ul>
-              <li>even when detached from the arduino</li>
-              <li>Move the relay controlling the fan to <b>pin 9</b></li>
-            </ul>
-          <li><b>ADJUST:</b> test your coding skills
-            <ul>
-              <li>Adjust your code so the Arduino can control the fan using <b>pin 9</b></li>
-              <li>Change the fan timing to be <b>ON</b> for 6 seconds and <b>OFF</b> for 3 seconds</li>
-            </ul>
-            <li><b>VERIFY KNOWLEDGE:</b></li>
-            <ul>
-              <li>what is current?</li>
-              <li>what can a digital pin output?</li>
-              <li>what does pin output mode mean?</li>
-              <li>How much current can this fan handle?</li>
-              <li>How much voltage can this fan handle?</li>
-              <li>How much current can this relay deliver?</li>
-              <li>How much voltage can this relay deliver?</li>
-              <li>How much current can the Arduino deliver?</li>
-              <li>How much voltage can the Arduino deliver?</li>
-              <li>explain why a relay is helpful in this case?</li>
-            </ul>
+          <li><b>CONFIGURE:</b> your software environment</li>
+          <li><b>TEST:</b> your ability to program the Arduino</li>
+          <li><b>ADJUST:</b> your code</li>
+          <li><b>VERIFY SOFTWARE KNOWLEDGE:</b> basic software</li>
         </ol>
       </div>
     </div>
 
     <div class="panel-heading">
       <h4 class="panel-title" data-toggle="collapse" data-target="#collapseG">
-        G. Integration
+        G. Hardware
       </h4>
     </div>
     <div id="collapseG"
+      class="panel-collapse collapse">
+      <div class="panel-body">
+        <a href="/workshop/hardware">Hardware</a>
+        <br>
+        <br>
+        <b>ANALOG (Thermometer)</b>
+        <ol>
+          <li><b>WIRING:</b> add the thermometer</li>
+          <li><b>TEST:</b> that the thermometer works</li>
+          <li><b>FAIL TEST:</b> that the thermometer fails</li>
+          <li><b>ADJUST:</b> your code (tests your knowledge)
+          <li><b>VERIFY ANALOG HARDWARE/SOFTWARE KNOWLEDGE:</b></li>
+        </ol>
+        <br>
+        <b>DIGITAL and HIGH POWER (Fan and Relay)</b>
+        <ol>
+          <li><b>WIRING:</b> the high power fan</li>
+          <li><b>TEST:</b> the fan</li>
+          <li><b>FAILSAFE TEST:</b> be sure the fan fails safely</li>
+          <li><b>ADJUST:</b> your code (tests your skills)
+          <li><b>VERIFY DIGITAL HARDWARE/SOFTWARE KNOWLEDGE:</b></li>
+        </ol>
+        <br>
+        <b><a href="/workshop/hardware#circuit">Circuit Diagram</a></b>
+      </div>
+    </div>
+
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseH">
+        H. Integration
+      </h4>
+    </div>
+    <div id="collapseH"
       class="panel-collapse collapse">
       <div class="panel-body">
         Ideally in this phase your robot would actually keep a plant alive
         <ol>
           <li><b>UPLOAD:</b> <b>temperature_controlled_fan</b> software (link to github) and verify the fan turns on at and above 27.0 *C</li>
           <li><b>ADJUST:</b> the fan trigger temperature to 26.5 *C and verify it works as expected</li>
-          <li><b>VERIFY KNOWLEDGE:</b> you know and understand the Arduino software rules:</li>
+          <li><b>VERIFY INTEGRATION KNOWLEDGE:</b> you know and understand the Arduino software rules:</li>
             <ul>
               <li>what does setup() do?</li>
               <li>what does loop() do?</li>
@@ -210,11 +175,11 @@
     </div>
 
     <div class="panel-heading">
-      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseH">
-        H. Engineering and Design
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseI">
+        I. Engineering and Design
       </h4>
     </div>
-    <div id="collapseH"
+    <div id="collapseI"
       class="panel-collapse collapse">
       <div class="panel-body">
         <i>This would normally be done at the beginning and through out the creation process (however we don't have time today)</i>
@@ -230,11 +195,11 @@
     </div>
 
     <div class="panel-heading">
-      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseI">
-        I. In Your Own Classrooom
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseJ">
+        J. In Your Own Classrooom
       </h4>
     </div>
-    <div id="collapseI"
+    <div id="collapseJ"
       class="panel-collapse collapse">
       <div class="panel-body">
         <ul>
@@ -243,6 +208,30 @@
           <li>Be sure your computer is setup to work with the Arduino</li>
           <li>Be sure you know our contact and hopefully others in this class to collaborate and help</li>
         </ul>
+      </div>
+    </div>
+
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseK">
+        K. Post-Test
+      </h4>
+    </div>
+    <div id="collapseK"
+      class="panel-collapse collapse">
+      <div class="panel-body">
+        Try the Post-Test here (link)
+      </div>
+    </div>
+
+    <div class="panel-heading">
+      <h4 class="panel-title" data-toggle="collapse" data-target="#collapseL">
+        L. Feedback
+      </h4>
+    </div>
+    <div id="collapseL"
+      class="panel-collapse collapse">
+      <div class="panel-body">
+        Please give us your feedback and ideas here (link)
       </div>
     </div>
 
