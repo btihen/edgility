@@ -1,0 +1,50 @@
+<div class="panel panel-success">
+  <div class="panel-heading">
+    <h3 class="panel-title"><%= @title %></h3>
+  </div>
+  <div class="panel-body">
+
+    <p class="text-danger"><b>ALWAYS UNPLUG THE ARDUINO WHEN WIRING -- for both your and the Arduino's safety</b></p>
+    <br>
+    <b>FAN and RELAY</b>
+    <br>
+    Digital Hardware / Software and High Power Circuits
+    <ol>
+      <li><b>WIRING:</b> Using the circuit diagram add the fan using -- controlled via the relay</li>
+      <li><b>TEST:</b>  the fan can be controled by the arduino -- upload the <b>test_fan_control</b> (link to github) software</li>
+        <ul>
+          <li>the fan should run for 10 seconds and be off for 5 seconds</li>
+          <li>Open the serial communication interface and be sure the "FAN ON" and "FAN OFF" messages are in sync with the fan's activity</li>
+        </ul>
+      <li><b>FAILSAFE TEST:</b> be sure the fan runs continiously in failure conditions:
+        <ul>
+          <li>even when detached from the arduino</li>
+          <li>Move the relay controlling the fan to <b>pin 9</b></li>
+        </ul>
+      <li><b>ADJUST:</b> test your coding skills</li>
+        <ul>
+          <li>Adjust your code so the Arduino can control the fan using <b>pin 9</b></li>
+          <li>Change the fan timing to be <b>ON</b> for 6 seconds and <b>OFF</b> for 3 seconds</li>
+        </ul>
+      <br>
+      <li><b>VERIFY KNOWLEDGE:</b></li>
+        <ul>
+          <li>what is current?</li>
+          <li>what can a digital pin output?</li>
+          <li>what does pin output mode mean?</li>
+          <li>How much current can this fan handle?</li>
+          <li>How much voltage can this fan handle?</li>
+          <li>How much current can this relay deliver?</li>
+          <li>How much voltage can this relay deliver?</li>
+          <li>How much current can the Arduino deliver?</li>
+          <li>How much voltage can the Arduino deliver?</li>
+          <li>explain why a relay is helpful in this case?</li>
+        </ul>
+    </ol>
+    <br>
+    <b id="circuit">Circuit Diagram</b>
+    <br>
+    <img src="http://dummyimage.com/800x1200/eee/fff&amp;text=circuit_diagram" class="img-responsive">
+
+  </div>
+</div>

@@ -1,4 +1,4 @@
-class GardenerController < ApplicationController
+class GrowSmartController < ApplicationController
   # http://blog.teamtreehouse.com/static-pages-ruby-rails
   def show
     @title = "#{controller_name.upcase}"

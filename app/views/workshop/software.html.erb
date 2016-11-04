@@ -13,15 +13,20 @@
         <ul>
           <li>Download the Arduino software from <a href="https://www.arduino.cc/en/Main/Software">Arduino.cc</a></li>
           <li>Plug the Arduino into your computer</li>
-          <li>Start and configure the software - be sure it can see the arduino</li>
+          <li>Start the Arduino software
+          <li>Be sure it is set to compile for Arduino Uno (Tools -> Board (uno...))</li>
+          <li>Start and be sure it can communicate with the arduino (Tools -> Port (usb...))</li>
         </ul>
       <li><b>TEST:</b> <b>test_blink</b> software (link to github) to the arduino and be sure the Arduino's built-in LED blinks</li>
         <ul>
           <li>verify the LED on for 2 seconds and off 1 second</li>
           <li>verify using the serial communication you can see the print out of when the Arduino thinks the LED is ON and OFF</li>
-          <li>ADVANCED OPTION: change the speed to the serial communication in your software, upload your updated software and observe the Arduino print statements</li>
         </ul>
-      <li><b>ADJUST:</b> change the LED on time to 4 seconds ON and 2 seconds OFF</li>
+      <li><b>ADJUST:</b></li>
+        <ul>
+          <li>change the code -- make the LED ON time to 4 seconds and the OFF time to 2 seconds</li>
+          <li>change the serial communication speed to 56700 in your software, upload your updated software and observe the Arduino print statements</li>
+        </ul>
       <li><b>VERIFY KNOWLEDGE:</b> basic Arduino software concepts</li>
         <ul>
           <li>what does the delay command do?</li>
