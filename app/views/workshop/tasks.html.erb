@@ -24,33 +24,64 @@
       </div>
       <div class="checkbox">
         <label>
-          <input type="checkbox"> <b>Compare</b> against the teacher's list<br>
-            <i>(discuss and understand any differences -- sorry not today)</i>
+          <input type="checkbox"> <b>Verify Knowledge</b> and priorities with
+          the teacher -- discuss and understand any differences
+          <i>(not done in today's workshop)</i>
         </label>
       </div>
 
       <br>
 
-      <h4>Software Learning Task
+      <h4>Software Setup &amp; Intro
         <small><a href="/workshop/software">Details and Tips</a></small></h4>
       <p class="text-warning">Remove ALL code before copying in new code!</p>
       <div class="checkbox">
         <label>
-          <input type="checkbox"> <b>Configure</b> your arduino software to
-          match your Ardunio (an Uno) and set the USB connection port
+          <input type="checkbox"> <b>Configure</b> your arduino software so that:<br>
+          1) <b>Tools -> Board</b> match your Ardunio: <i>(<b>Arduino/Genuino Uno</b>
+             - in this case)</i> -- this configures the compiler to prepare your
+             code properly for your particular type of Ardunio<br>
+          2) <b>Tools -> Port</b> is set to your Arudino: <i>(<b>/dev/tty.usbmodem1411</b>
+            on MacOS and Linux)</i> -- this sets up the serial communication with your Ardunio
         </label>
       </div>
       <div class="checkbox">
         <label>
-          <input type="checkbox"> <b>Test setup</b> copy
-          <a href="">test_ardunio</a> into a new arduino file and upload to the
-          arduino - is should be ON for 2 seconds and OFF for 1 second
+          <input type="checkbox"> <b>Test setup:</b><br>
+          1) copy this code
+          <a href="https://github.com/ed-gility/workshop_test_setup/blob/master/workshop_test_setup.ino">workshop_test_setup</a>
+          into a new Arduino file (<b>File -> New</b>)<br>
+          2) verify the code has no errors: (<b>Sketch -> Verify/Compile</b> or click the "check" button)<br>
+          - fix any errors found <i>(otherwise the next step doesn't work either)</i><br>
+          3) upload this to the Ardunio (<b>Sketch -> Upload</b> to click the "right arrow" button)<br>
+          4) the built-in LED should now BLINK -- ON for 2 seconds and OFF for 1 second
         </label>
       </div>
       <div class="checkbox">
         <label>
-          <input type="checkbox"> <b>Adjust</b> your code - to be ON for
-          4 seconds and OFF for 2 seconds
+          <input type="checkbox"> <b>Test Serial Communication</b> (<b>Tools ->
+            Serial Monitor</b> or click on the "magnifying glass") -- be sure you
+            see the following print statements:<br>
+            LED ON<br>
+            LED OFF
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> <b>Adjust</b> your code to do the following
+          <i>(see: <a href="https://github.com/ed-gility/workshop_test_setup_explained/blob/master/workshop_test_setup_explained.ino">workshop_test_setup_explained</a>
+          for help)</i><br>
+          1) be ON for 4 seconds and OFF for 2 seconds<br>
+          2) change the serial communication speed to 57600 baud (on the computer
+          and in the Ardunio code)
+        </label>
+      </div>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox"> <b>Verify Knowledge</b> be sure you and your
+          parnters know and can discuss the questions listed on:
+          <a href="/workshop/software">Software Intro Knowledge</a>
+          <i>(not done in today's workshop)</i>
         </label>
       </div>
 
