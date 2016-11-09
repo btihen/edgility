@@ -2,7 +2,7 @@
 lock '3.6.1'
 
 set :application, 'edgility'
-set :repo_url, 'git@github.com:btihen:edgility.git'
+set :repo_url, 'git@github.com:ed-gility/edgility.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
