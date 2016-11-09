@@ -7,8 +7,8 @@ set :repo_url, 'git@github.com:ed-gility/edgility.git'
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
-# Default deploy_to directory is /var/www/my_app_name
-# set :deploy_to, '/var/www/my_app_name'
+# Default deploy_to directory is /home/user/my_app_name
+set :deploy_to, '/var/www/edgility'
 
 # Default value for :scm is :git
 # set :scm, :git
