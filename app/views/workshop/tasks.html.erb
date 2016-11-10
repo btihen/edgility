@@ -37,11 +37,12 @@
       <p class="text-warning">Remove ALL code before copying in new code!</p>
       <div class="checkbox">
         <label>
-          <input type="checkbox"> <b>Configure</b> your arduino software so that:<br>
-          1) <b>Tools -> Board</b> match your Ardunio: <i>(<b>Arduino/Genuino Uno</b>
+          <input type="checkbox"> <b>Setup</b> your arduino software so that:<br>
+          2) <b>Install</b> the Ardunio <a href="https://www.arduino.cc/en/Main/Software">Software</a>
+          2) <b>Configure</b> Arduino type <i>Tools -> Board</i> -- choose <b>Arduino/Genuino Uno</b>
              - in this case)</i> -- this configures the compiler to prepare your
              code properly for your particular type of Ardunio<br>
-          2) <b>Tools -> Port</b> is set to your Arudino: <i>(<b>/dev/tty.usbmodem1411</b>
+          3) <b>Tools -> Port</b> is set to your Arudino: <i>(<b>/dev/tty.usbmodem1411</b>
             on MacOS and Linux)</i> -- this sets up the serial communication with your Ardunio
         </label>
       </div>
@@ -92,19 +93,20 @@
       <p class="text-danger">ALWAYS UNPLUG the Arduino while WIRING</p>
       <div class="checkbox">
         <label>
-          <input type="checkbox"> <b>Wire</b> the thermometer using the
+          <input type="checkbox"> <b>Build</b> - wire the thermometer using the
           <a href="">analog sensor cicuit diagram</a>
         </label>
       </div>
       <div class="checkbox">
         <label>
-          <input type="checkbox"> <b>Test w/code</b> the thermometer using
-          <a href="">test_thermometer</a>
+          <input type="checkbox"> <b>Functional Test</b> - the thermometer with the
+          following code <a href="">test_thermometer</a> - be sure the
+          temperature readings (printed) are sensible
         </label>
       </div>
       <div class="checkbox">
         <label>
-          <input type="checkbox"> <b>Fail Test</b> the thermometer
+          <input type="checkbox"> <b>Fail/Failsafe Test</b> the thermometer
         </label>
       </div>
       <div class="checkbox">
