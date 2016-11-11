@@ -9,40 +9,86 @@
     <p class="text-danger"><b>ALWAYS DELETE ALL CODE IN THE ARDUINO SOFTWARE -- including {} -- BEFORE COPYING IN NEW CODE</b></p>
     <br>
     <ol>
-      <li><b>CONFIGURE:</b> your software environment</li>
+      <li><b>RESEARCH:</b> hardware/software options that allow one to build a
+        robot with sensors that can control robots.
+        <ol>
+          <li>List 2 options other than Arduino</li>
+          <li>list your favorite option each platform offers (Arduino and the other two)
+          <li>Write why you think the Arduino was chosen for this project</li>
+        </ol>
+      <li><b>SETUP/BUILD:</b> your software environment</li>
+        <ol>
+          <li><b>Install</b> the
+            <a href="https://www.arduino.cc/en/Main/Software">Ardunio Software</a></li>
+          <li><b>Configure the compiler</b> for the current Arduino
+            (<b>Arduino/Genuino Uno</b>). <i>HINT: Tools -> Board</i></li>
+          <li><b>Configure the communication</b> with our Arduino to the
+            appropriate USB port (<b>/dev/tty.usbmodem1411</b> on MacOS).
+            <i>HINT: Tools -> Port</i></li>
+        </ol>
+      <li><b>FUNCTIONAL TEST:</b> <b>test_blink</b> be sure your setup
+        works as expected - pass the following tests</li>
+        <ol>
+          <li>copy the code
+          <a href="https://github.com/ed-gility/workshop_test_setup/blob/master/workshop_test_setup.ino">workshop_test_setup</a>
+          into a new Arduino program (<b>File -> New</b>)</li>
+          <li>verify the code has no errors <i>(HINT: <b>Sketch -> Verify/Compile)</b>
+            or CLICK the "check" button)</i></li>
+          <li>upload this compiled code to the Ardunio. <i>(HINT: <b>Sketch ->
+            Upload</b> or CLICK the "right arrow" button)</i></li>
+          <li>the built-in LED should now BLINK -- ON for 2 seconds and OFF for
+            1 second</li>
+          <li>watch the arduino print statements -- be sure you see the following
+            print statements (in sync with the LED being ON and OFF):<br>
+            * LED ON<br>
+            * LED OFF<br>
+            <i>(HINT: <b>Tools -> Serial Monitor</b> or click on the
+              "magnifying glass")</i></li>
+        </ol>
+      <li><b>FAIL TEST:</b> -- disconnect the arduino from the computer and try
+        to upload the software.</li>
         <ul>
-          <li>Download the Arduino software from <a href="https://www.arduino.cc/en/Main/Software">Arduino.cc</a></li>
-          <li>Plug the Arduino into your computer</li>
-          <li>Start the Arduino software
-          <li>Be sure it is set to compile for Arduino Uno (Tools -> Board (uno...))</li>
-          <li>Start and be sure it can communicate with the arduino (Tools -> Port (usb...))</li>
+          <li><b>Write</b> the error message in your tech journal</li>
         </ul>
-      <li><b>TEST:</b> <b>test_blink</b> software (link to github) to the arduino and be sure the Arduino's built-in LED blinks</li>
-        <ul>
-          <li>verify the LED on for 2 seconds and off 1 second</li>
-          <li>verify using the serial communication you can see the print out of when the Arduino thinks the LED is ON and OFF</li>
-        </ul>
-      <li><b>ADJUST:</b></li>
-        <ul>
-          <li>change the code -- make the LED ON time to 4 seconds and the OFF time to 2 seconds</li>
-          <li>change the serial communication speed to 56700 in your software, upload your updated software and observe the Arduino print statements</li>
-        </ul>
-      <li><b>VERIFY KNOWLEDGE:</b> basic Arduino software concepts</li>
-        <ul>
-          <li>what does the delay command do?</li>
-          <li>what does the delay command use milli-seconds?</li>
-          <li>what does the symbol "=" do?</li>
-          <li>what code reads a pin?</li>
-          <li>what code outputs to a pin?</li>
-          <li>what does setup() do?</li>
-          <li>what does loop() do?</li>
-          <li>why is it useful to assign pin numbers to variable?</li>
-          <li>what is serial communication?</li>
-          <li>what does print do?</li>
-          <li>what does println do?</li>
-          <li>how can you view Arduino print statements?</li>
-          <li>how can print statements help you understand and debug Arduino code?</li>
-        </ul>
+      <li><b>ADJUST:</b> the code to do the following:</li>
+        <ol>
+          <li>be ON for 4 seconds</li>
+          <li>be OFF for 2 seconds</li>
+          <li>change the code to print: <b>The LED is now ON</b></li>
+          <li>change the code to print: <b>The LED is now OFF</b></li>
+          <li>change the serial communication speed to operate at 57600 baud</li>
+          <li>view your new code operating at the new blink rate and watch the
+          new print statements appear using the baud rate of 57600</li>
+        </ol>
+      <li><b>CONCEPTUAL MASTERY:</b> new concepts used in this software -
+        describe your answers to these in your tech journal</li>
+        <ol>
+          <li>describe what the <b>delay( 3500 )</b> command does -- describe the
+            meaning of 3500 in this statement too</li>
+          <li>how many milliseconds are in 2.5 seconds?</li>
+          <li>describe what the compiler does</li>
+          <li>describe what <b>Serial.begin( 9600 )</b> does and state the baud
+            rate used</li>
+          <li>describe the command <b>digitalWrite( LED_BUILTIN, HIGH )</b> --
+            describe the LED_BUILTIN and HIGH too</li>
+          <li>describe what does <b>setup() { }</b> does</li>
+          <li>describe what does <b>loop() { }</b> does</li>
+          <li>describe what does <b>Serial.println( "LED ON" )</b> does</li>
+          <li>descrive what type of code the UPLOAD button sends to the Arduino
+            and why a successful compile must happen BEFORE the upload happens</li>
+          <li>what character ends all Arduino statements</li>
+          <li>describe what a BLOCK of code is and the symbol that starts and
+            ends a block</li>
+        </ol>
+      <li><b>ACCEPTANCE:</b> ask your teacher for an acceptance demo.  For the
+        work to be accepted the following requirements must be met:
+        <ol>
+          <li>the work must meet the functional requirements</li>
+          <li>the team must be able to make ADJUSTMENTS upon request -- similar
+            to those described in the excersize</li>
+          <li>everyone on the team must be able to answer the CONCEPTUAL MASTERY
+            questions (depending on the age and class requirements)</li>
+        </ol>
     </ol>
 
   </div>
