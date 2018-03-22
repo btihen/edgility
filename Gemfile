@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
 # ruby '2.3.1'
-ruby '2.4.3'
-# ruby '2.5.0'
+# ruby '2.4.3'
+ruby '2.5.0'
 
 gem 'bootstrap3-rails'
 # gem 'bootstrap', '~> 4.0'
